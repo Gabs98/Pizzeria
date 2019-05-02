@@ -79,6 +79,12 @@
     <Compile Include="Catalogo de articulos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Catalogo de productos.Designer.vb">
+      <DependentUpon>Catalogo de productos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo de productos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
