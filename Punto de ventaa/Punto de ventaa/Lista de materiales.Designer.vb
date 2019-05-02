@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Catalogo_de_Productos
+Partial Class Lista_de_materiales
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -25,6 +25,6 @@ Partial Class Catalogo_de_Productos
         components = New System.ComponentModel.Container
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "Catalogo_de_Productos"
+        Me.Text = "Lista_de_materiales"
     End Sub
 End Class

@@ -79,12 +79,6 @@
     <Compile Include="Catalogo de articulos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Catalogo de Productos.Designer.vb">
-      <DependentUpon>Catalogo de Productos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Catalogo de Productos.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -92,10 +86,10 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Lista de Materiales.Designer.vb">
-      <DependentUpon>Lista de Materiales.vb</DependentUpon>
+    <Compile Include="Lista de materiales.Designer.vb">
+      <DependentUpon>Lista de materiales.vb</DependentUpon>
     </Compile>
-    <Compile Include="Lista de Materiales.vb">
+    <Compile Include="Lista de materiales.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginForm1.Designer.vb">
