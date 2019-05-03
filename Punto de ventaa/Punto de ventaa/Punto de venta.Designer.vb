@@ -38,14 +38,14 @@ Partial Class Form1
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.gpbBuscarProducto = New System.Windows.Forms.GroupBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.txtNomProducto = New System.Windows.Forms.TextBox()
+        Me.txtId = New System.Windows.Forms.TextBox()
+        Me.btnVentaNueva = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
+        Me.gpbBuscarProducto.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -195,16 +195,16 @@ Partial Class Form1
         Me.Label1.TabIndex = 13
         Me.Label1.Text = "Seleccione tipo de venta"
         '
-        'GroupBox1
+        'gpbBuscarProducto
         '
-        Me.GroupBox1.Controls.Add(Me.DataGridView1)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 104)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(830, 288)
-        Me.GroupBox1.TabIndex = 12
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Producto"
+        Me.gpbBuscarProducto.Controls.Add(Me.DataGridView1)
+        Me.gpbBuscarProducto.Controls.Add(Me.txtNomProducto)
+        Me.gpbBuscarProducto.Location = New System.Drawing.Point(12, 104)
+        Me.gpbBuscarProducto.Name = "gpbBuscarProducto"
+        Me.gpbBuscarProducto.Size = New System.Drawing.Size(830, 288)
+        Me.gpbBuscarProducto.TabIndex = 12
+        Me.gpbBuscarProducto.TabStop = False
+        Me.gpbBuscarProducto.Text = "Producto"
         '
         'DataGridView1
         '
@@ -216,29 +216,29 @@ Partial Class Form1
         Me.DataGridView1.Size = New System.Drawing.Size(817, 217)
         Me.DataGridView1.TabIndex = 1
         '
-        'TextBox2
+        'txtNomProducto
         '
-        Me.TextBox2.Location = New System.Drawing.Point(7, 22)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(817, 22)
-        Me.TextBox2.TabIndex = 0
+        Me.txtNomProducto.Location = New System.Drawing.Point(7, 22)
+        Me.txtNomProducto.Name = "txtNomProducto"
+        Me.txtNomProducto.Size = New System.Drawing.Size(817, 22)
+        Me.txtNomProducto.TabIndex = 0
         '
-        'TextBox1
+        'txtId
         '
-        Me.TextBox1.Location = New System.Drawing.Point(190, 23)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(160, 22)
-        Me.TextBox1.TabIndex = 11
+        Me.txtId.Location = New System.Drawing.Point(190, 23)
+        Me.txtId.Name = "txtId"
+        Me.txtId.Size = New System.Drawing.Size(160, 22)
+        Me.txtId.TabIndex = 11
         '
-        'Button1
+        'btnVentaNueva
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(22, 12)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(112, 42)
-        Me.Button1.TabIndex = 10
-        Me.Button1.Text = "Nueva Venta"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnVentaNueva.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnVentaNueva.Location = New System.Drawing.Point(22, 12)
+        Me.btnVentaNueva.Name = "btnVentaNueva"
+        Me.btnVentaNueva.Size = New System.Drawing.Size(112, 42)
+        Me.btnVentaNueva.TabIndex = 10
+        Me.btnVentaNueva.Text = "Nueva Venta"
+        Me.btnVentaNueva.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -252,16 +252,16 @@ Partial Class Form1
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.gpbBuscarProducto)
+        Me.Controls.Add(Me.txtId)
+        Me.Controls.Add(Me.btnVentaNueva)
         Me.Name = "Form1"
         Me.Text = "Punto de Venta"
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
+        Me.gpbBuscarProducto.ResumeLayout(False)
+        Me.gpbBuscarProducto.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -284,9 +284,9 @@ Partial Class Form1
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents gpbBuscarProducto As GroupBox
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents txtNomProducto As TextBox
+    Friend WithEvents txtId As TextBox
+    Friend WithEvents btnVentaNueva As Button
 End Class

@@ -38,7 +38,7 @@ Partial Class Menu
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CatalogoToolStripMenuItem, Me.ListaDeMaterialesToolStripMenuItem, Me.CatalogoDeProductosToolStripMenuItem, Me.PromocionesYCombosToolStripMenuItem, Me.ToolStripMenuItem1, Me.EmpleadosToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(810, 28)
+        Me.MenuStrip1.Size = New System.Drawing.Size(944, 28)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -81,7 +81,9 @@ Partial Class Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(810, 527)
+        Me.BackgroundImage = Global.Punto_de_ventaa.My.Resources.Resources.cibo_rustico_pizzeria_2017_web_sr
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(944, 618)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Menu"
