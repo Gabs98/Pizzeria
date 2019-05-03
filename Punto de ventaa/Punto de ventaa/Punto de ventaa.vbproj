@@ -91,6 +91,7 @@
     <Compile Include="Codigo de barras.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Config.vb" />
     <Compile Include="Empleados.Designer.vb">
       <DependentUpon>Empleados.vb</DependentUpon>
     </Compile>
