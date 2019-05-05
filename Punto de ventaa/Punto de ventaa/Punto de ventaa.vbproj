@@ -98,11 +98,11 @@
     <Compile Include="EmpleadosConf.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Punto de venta.vb">
+    <Compile Include="Ventas.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Punto de venta.Designer.vb">
-      <DependentUpon>Punto de venta.vb</DependentUpon>
+    <Compile Include="Ventas.Designer.vb">
+      <DependentUpon>Ventas.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Lista de materiales.Designer.vb">
@@ -117,10 +117,10 @@
     <Compile Include="LoginForm1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu.Designer.vb">
-      <DependentUpon>Menu.vb</DependentUpon>
+    <Compile Include="Menuu.Designer.vb">
+      <DependentUpon>Menuu.vb</DependentUpon>
     </Compile>
-    <Compile Include="Menu.vb">
+    <Compile Include="Menuu.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -149,14 +149,17 @@
     <EmbeddedResource Include="Catalogo de articulos.resx">
       <DependentUpon>Catalogo de articulos.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Punto de venta.resx">
-      <DependentUpon>Punto de venta.vb</DependentUpon>
+    <EmbeddedResource Include="Codigo de barras.resx">
+      <DependentUpon>Codigo de barras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas.resx">
+      <DependentUpon>Ventas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm1.resx">
       <DependentUpon>LoginForm1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu.resx">
-      <DependentUpon>Menu.vb</DependentUpon>
+    <EmbeddedResource Include="Menuu.resx">
+      <DependentUpon>Menuu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

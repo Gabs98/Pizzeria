@@ -1,4 +1,4 @@
-﻿Public Class Menu
+﻿Public Class Menuu
     Private Sub CatalogoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CatalogoArticulos.Click
         Catalogo_de_articulos.Show()
     End Sub
