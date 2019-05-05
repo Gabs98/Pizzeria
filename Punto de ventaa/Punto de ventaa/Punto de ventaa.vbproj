@@ -92,10 +92,10 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Config.vb" />
-    <Compile Include="Empleados.Designer.vb">
-      <DependentUpon>Empleados.vb</DependentUpon>
+    <Compile Include="EmpleadosConf.Designer.vb">
+      <DependentUpon>EmpleadosConf.vb</DependentUpon>
     </Compile>
-    <Compile Include="Empleados.vb">
+    <Compile Include="EmpleadosConf.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Punto de venta.vb">
@@ -146,6 +146,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Catalogo de articulos.resx">
+      <DependentUpon>Catalogo de articulos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Punto de venta.resx">
       <DependentUpon>Punto de venta.vb</DependentUpon>
     </EmbeddedResource>
