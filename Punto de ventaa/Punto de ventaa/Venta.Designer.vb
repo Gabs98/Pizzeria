@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class Venta
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -60,10 +60,10 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Controls.Add(Me.TextBox3)
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 410)
+        Me.GroupBox2.Location = New System.Drawing.Point(12, 405)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(830, 352)
-        Me.GroupBox2.TabIndex = 19
+        Me.GroupBox2.TabIndex = 29
         Me.GroupBox2.TabStop = False
         '
         'TextBox7
@@ -142,46 +142,46 @@ Partial Class Form1
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(900, 528)
+        Me.Button6.Location = New System.Drawing.Point(900, 523)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(130, 51)
-        Me.Button6.TabIndex = 18
+        Me.Button6.TabIndex = 28
         Me.Button6.Text = "Salir"
         Me.Button6.UseVisualStyleBackColor = True
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(900, 410)
+        Me.Button5.Location = New System.Drawing.Point(900, 405)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(130, 73)
-        Me.Button5.TabIndex = 17
+        Me.Button5.TabIndex = 27
         Me.Button5.Text = "Entrega a Domicilio"
         Me.Button5.UseVisualStyleBackColor = True
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(900, 301)
+        Me.Button4.Location = New System.Drawing.Point(900, 296)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(130, 71)
-        Me.Button4.TabIndex = 16
+        Me.Button4.TabIndex = 26
         Me.Button4.Text = "Telefono/Recoger en Local"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(900, 213)
+        Me.Button3.Location = New System.Drawing.Point(900, 208)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(130, 52)
-        Me.Button3.TabIndex = 15
+        Me.Button3.TabIndex = 25
         Me.Button3.Text = "Consumo en local"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(900, 115)
+        Me.Button2.Location = New System.Drawing.Point(900, 110)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(130, 51)
-        Me.Button2.TabIndex = 14
+        Me.Button2.TabIndex = 24
         Me.Button2.Text = "Para Llevar"
         Me.Button2.UseVisualStyleBackColor = True
         '
@@ -189,20 +189,20 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(866, 54)
+        Me.Label1.Location = New System.Drawing.Point(866, 49)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(215, 20)
-        Me.Label1.TabIndex = 13
+        Me.Label1.TabIndex = 23
         Me.Label1.Text = "Seleccione tipo de venta"
         '
         'gpbBuscarProducto
         '
         Me.gpbBuscarProducto.Controls.Add(Me.DataGridView1)
         Me.gpbBuscarProducto.Controls.Add(Me.txtNomProducto)
-        Me.gpbBuscarProducto.Location = New System.Drawing.Point(12, 104)
+        Me.gpbBuscarProducto.Location = New System.Drawing.Point(12, 99)
         Me.gpbBuscarProducto.Name = "gpbBuscarProducto"
         Me.gpbBuscarProducto.Size = New System.Drawing.Size(830, 288)
-        Me.gpbBuscarProducto.TabIndex = 12
+        Me.gpbBuscarProducto.TabIndex = 22
         Me.gpbBuscarProducto.TabStop = False
         Me.gpbBuscarProducto.Text = "Producto"
         '
@@ -225,26 +225,26 @@ Partial Class Form1
         '
         'txtId
         '
-        Me.txtId.Location = New System.Drawing.Point(190, 23)
+        Me.txtId.Location = New System.Drawing.Point(190, 18)
         Me.txtId.Name = "txtId"
         Me.txtId.Size = New System.Drawing.Size(160, 22)
-        Me.txtId.TabIndex = 11
+        Me.txtId.TabIndex = 21
         '
         'btnVentaNueva
         '
         Me.btnVentaNueva.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnVentaNueva.Location = New System.Drawing.Point(22, 12)
+        Me.btnVentaNueva.Location = New System.Drawing.Point(22, 7)
         Me.btnVentaNueva.Name = "btnVentaNueva"
         Me.btnVentaNueva.Size = New System.Drawing.Size(112, 42)
-        Me.btnVentaNueva.TabIndex = 10
+        Me.btnVentaNueva.TabIndex = 20
         Me.btnVentaNueva.Text = "Nueva Venta"
         Me.btnVentaNueva.UseVisualStyleBackColor = True
         '
-        'Form1
+        'Venta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1080, 785)
+        Me.ClientSize = New System.Drawing.Size(1090, 740)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
@@ -255,8 +255,8 @@ Partial Class Form1
         Me.Controls.Add(Me.gpbBuscarProducto)
         Me.Controls.Add(Me.txtId)
         Me.Controls.Add(Me.btnVentaNueva)
-        Me.Name = "Form1"
-        Me.Text = "Punto de Venta"
+        Me.Name = "Venta"
+        Me.Text = "Venta"
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()

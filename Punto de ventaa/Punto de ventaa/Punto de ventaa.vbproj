@@ -47,6 +47,9 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>AUXILIAR-PIZZERO-Cali-20160807193122.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -98,11 +101,10 @@
     <Compile Include="EmpleadosConf.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ventas.vb">
-      <SubType>Form</SubType>
+    <Compile Include="Venta.Designer.vb">
+      <DependentUpon>Venta.vb</DependentUpon>
     </Compile>
-    <Compile Include="Ventas.Designer.vb">
-      <DependentUpon>Ventas.vb</DependentUpon>
+    <Compile Include="Venta.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Lista de materiales.Designer.vb">
@@ -152,8 +154,8 @@
     <EmbeddedResource Include="Codigo de barras.resx">
       <DependentUpon>Codigo de barras.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ventas.resx">
-      <DependentUpon>Ventas.vb</DependentUpon>
+    <EmbeddedResource Include="Venta.resx">
+      <DependentUpon>Venta.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm1.resx">
       <DependentUpon>LoginForm1.vb</DependentUpon>
@@ -182,6 +184,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cibo-rustico-pizzeria-2017-web-sr.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AUXILIAR-PIZZERO-Cali-20160807193122.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -45,7 +45,7 @@ Public Class Codigo_de_barras
             Case "Administrador"
                 Menuu.Show()
             Case "Cajero"
-
+                Venta.Show()
             Case " "
                 Me.Close()
         End Select
