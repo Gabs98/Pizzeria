@@ -225,7 +225,7 @@ Partial Class Venta
         '
         'txtId
         '
-        Me.txtId.Location = New System.Drawing.Point(190, 18)
+        Me.txtId.Location = New System.Drawing.Point(180, 18)
         Me.txtId.Name = "txtId"
         Me.txtId.Size = New System.Drawing.Size(160, 22)
         Me.txtId.TabIndex = 21

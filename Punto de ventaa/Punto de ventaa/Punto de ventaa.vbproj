@@ -151,8 +151,20 @@
     <EmbeddedResource Include="Catalogo de articulos.resx">
       <DependentUpon>Catalogo de articulos.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo de productos.resx">
+      <DependentUpon>Catalogo de productos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Codigo de barras.resx">
       <DependentUpon>Codigo de barras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadosConf.resx">
+      <DependentUpon>EmpleadosConf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista de materiales.resx">
+      <DependentUpon>Lista de materiales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Promociones y combos.resx">
+      <DependentUpon>Promociones y combos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Venta.resx">
       <DependentUpon>Venta.vb</DependentUpon>
