@@ -23,16 +23,16 @@ Partial Class Lista_de_materiales
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.dgvMateriales = New System.Windows.Forms.DataGridView()
+        Me.dgvLista = New System.Windows.Forms.DataGridView()
         Me.btnSalir = New System.Windows.Forms.Button()
         Me.btnBorrar = New System.Windows.Forms.Button()
         Me.btnModificar = New System.Windows.Forms.Button()
         Me.btnAgregar = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.txtCantidad = New System.Windows.Forms.TextBox()
-        Me.txtUnidad = New System.Windows.Forms.TextBox()
-        Me.txtIDArticulo = New System.Windows.Forms.TextBox()
-        Me.cmbArticulo = New System.Windows.Forms.ComboBox()
+        Me.txtUnidadMedida = New System.Windows.Forms.TextBox()
+        Me.txtNombreArt = New System.Windows.Forms.TextBox()
+        Me.CmbArticuloID = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -40,7 +40,7 @@ Partial Class Lista_de_materiales
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.txtNumProducto = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        CType(Me.dgvMateriales, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvLista, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -55,14 +55,14 @@ Partial Class Lista_de_materiales
         Me.Label6.TabIndex = 19
         Me.Label6.Text = "Nombre:"
         '
-        'dgvMateriales
+        'dgvLista
         '
-        Me.dgvMateriales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvMateriales.Location = New System.Drawing.Point(54, 330)
-        Me.dgvMateriales.Margin = New System.Windows.Forms.Padding(4)
-        Me.dgvMateriales.Name = "dgvMateriales"
-        Me.dgvMateriales.Size = New System.Drawing.Size(677, 185)
-        Me.dgvMateriales.TabIndex = 18
+        Me.dgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvLista.Location = New System.Drawing.Point(54, 330)
+        Me.dgvLista.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgvLista.Name = "dgvLista"
+        Me.dgvLista.Size = New System.Drawing.Size(677, 185)
+        Me.dgvLista.TabIndex = 18
         '
         'btnSalir
         '
@@ -111,9 +111,9 @@ Partial Class Lista_de_materiales
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.txtCantidad)
-        Me.GroupBox1.Controls.Add(Me.txtUnidad)
-        Me.GroupBox1.Controls.Add(Me.txtIDArticulo)
-        Me.GroupBox1.Controls.Add(Me.cmbArticulo)
+        Me.GroupBox1.Controls.Add(Me.txtUnidadMedida)
+        Me.GroupBox1.Controls.Add(Me.txtNombreArt)
+        Me.GroupBox1.Controls.Add(Me.CmbArticuloID)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label3)
@@ -134,30 +134,30 @@ Partial Class Lista_de_materiales
         Me.txtCantidad.Size = New System.Drawing.Size(132, 22)
         Me.txtCantidad.TabIndex = 7
         '
-        'txtUnidad
+        'txtUnidadMedida
         '
-        Me.txtUnidad.Location = New System.Drawing.Point(212, 124)
-        Me.txtUnidad.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtUnidad.Name = "txtUnidad"
-        Me.txtUnidad.Size = New System.Drawing.Size(132, 22)
-        Me.txtUnidad.TabIndex = 6
+        Me.txtUnidadMedida.Location = New System.Drawing.Point(212, 124)
+        Me.txtUnidadMedida.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtUnidadMedida.Name = "txtUnidadMedida"
+        Me.txtUnidadMedida.Size = New System.Drawing.Size(132, 22)
+        Me.txtUnidadMedida.TabIndex = 6
         '
-        'txtIDArticulo
+        'txtNombreArt
         '
-        Me.txtIDArticulo.Location = New System.Drawing.Point(212, 85)
-        Me.txtIDArticulo.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtIDArticulo.Name = "txtIDArticulo"
-        Me.txtIDArticulo.Size = New System.Drawing.Size(132, 22)
-        Me.txtIDArticulo.TabIndex = 5
+        Me.txtNombreArt.Location = New System.Drawing.Point(212, 85)
+        Me.txtNombreArt.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtNombreArt.Name = "txtNombreArt"
+        Me.txtNombreArt.Size = New System.Drawing.Size(132, 22)
+        Me.txtNombreArt.TabIndex = 5
         '
-        'cmbArticulo
+        'CmbArticuloID
         '
-        Me.cmbArticulo.FormattingEnabled = True
-        Me.cmbArticulo.Location = New System.Drawing.Point(212, 42)
-        Me.cmbArticulo.Margin = New System.Windows.Forms.Padding(4)
-        Me.cmbArticulo.Name = "cmbArticulo"
-        Me.cmbArticulo.Size = New System.Drawing.Size(456, 24)
-        Me.cmbArticulo.TabIndex = 4
+        Me.CmbArticuloID.FormattingEnabled = True
+        Me.CmbArticuloID.Location = New System.Drawing.Point(212, 42)
+        Me.CmbArticuloID.Margin = New System.Windows.Forms.Padding(4)
+        Me.CmbArticuloID.Name = "CmbArticuloID"
+        Me.CmbArticuloID.Size = New System.Drawing.Size(456, 24)
+        Me.CmbArticuloID.TabIndex = 4
         '
         'Label5
         '
@@ -236,7 +236,7 @@ Partial Class Lista_de_materiales
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(899, 627)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.dgvMateriales)
+        Me.Controls.Add(Me.dgvLista)
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.btnBorrar)
         Me.Controls.Add(Me.btnModificar)
@@ -247,7 +247,7 @@ Partial Class Lista_de_materiales
         Me.Controls.Add(Me.Label1)
         Me.Name = "Lista_de_materiales"
         Me.Text = "Lista_de_materiales"
-        CType(Me.dgvMateriales, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvLista, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
@@ -256,16 +256,16 @@ Partial Class Lista_de_materiales
     End Sub
 
     Friend WithEvents Label6 As Label
-    Friend WithEvents dgvMateriales As DataGridView
+    Friend WithEvents dgvLista As DataGridView
     Friend WithEvents btnSalir As Button
     Friend WithEvents btnBorrar As Button
     Friend WithEvents btnModificar As Button
     Friend WithEvents btnAgregar As Button
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents txtCantidad As TextBox
-    Friend WithEvents txtUnidad As TextBox
-    Friend WithEvents txtIDArticulo As TextBox
-    Friend WithEvents cmbArticulo As ComboBox
+    Friend WithEvents txtUnidadMedida As TextBox
+    Friend WithEvents txtNombreArt As TextBox
+    Friend WithEvents CmbArticuloID As ComboBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label

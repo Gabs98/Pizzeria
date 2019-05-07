@@ -28,9 +28,9 @@ Partial Class Promociones_y_combos
         Me.btnSalir = New System.Windows.Forms.Button()
         Me.btnBorrar = New System.Windows.Forms.Button()
         Me.btnAgregar = New System.Windows.Forms.Button()
-        Me.dtpFin = New System.Windows.Forms.DateTimePicker()
+        Me.dtpFechaFin = New System.Windows.Forms.DateTimePicker()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.dtpInicio = New System.Windows.Forms.DateTimePicker()
+        Me.dtpFechaInicio = New System.Windows.Forms.DateTimePicker()
         Me.txtPrecioFinal = New System.Windows.Forms.TextBox()
         Me.cmbTipo = New System.Windows.Forms.ComboBox()
         Me.txtNombre = New System.Windows.Forms.TextBox()
@@ -39,9 +39,9 @@ Partial Class Promociones_y_combos
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnPasar = New System.Windows.Forms.Button()
-        Me.txtPrecioReg = New System.Windows.Forms.TextBox()
+        Me.txtPrecioNormal = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.cmbProducto = New System.Windows.Forms.ComboBox()
+        Me.cmProducto = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.dgvCombos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -99,13 +99,13 @@ Partial Class Promociones_y_combos
         Me.btnAgregar.Text = "Agregar"
         Me.btnAgregar.UseVisualStyleBackColor = True
         '
-        'dtpFin
+        'dtpFechaFin
         '
-        Me.dtpFin.Location = New System.Drawing.Point(401, 324)
-        Me.dtpFin.Margin = New System.Windows.Forms.Padding(4)
-        Me.dtpFin.Name = "dtpFin"
-        Me.dtpFin.Size = New System.Drawing.Size(137, 22)
-        Me.dtpFin.TabIndex = 35
+        Me.dtpFechaFin.Location = New System.Drawing.Point(401, 324)
+        Me.dtpFechaFin.Margin = New System.Windows.Forms.Padding(4)
+        Me.dtpFechaFin.Name = "dtpFechaFin"
+        Me.dtpFechaFin.Size = New System.Drawing.Size(137, 22)
+        Me.dtpFechaFin.TabIndex = 35
         '
         'Label7
         '
@@ -118,13 +118,13 @@ Partial Class Promociones_y_combos
         Me.Label7.TabIndex = 34
         Me.Label7.Text = "Fin:"
         '
-        'dtpInicio
+        'dtpFechaInicio
         '
-        Me.dtpInicio.Location = New System.Drawing.Point(172, 324)
-        Me.dtpInicio.Margin = New System.Windows.Forms.Padding(4)
-        Me.dtpInicio.Name = "dtpInicio"
-        Me.dtpInicio.Size = New System.Drawing.Size(132, 22)
-        Me.dtpInicio.TabIndex = 33
+        Me.dtpFechaInicio.Location = New System.Drawing.Point(172, 324)
+        Me.dtpFechaInicio.Margin = New System.Windows.Forms.Padding(4)
+        Me.dtpFechaInicio.Name = "dtpFechaInicio"
+        Me.dtpFechaInicio.Size = New System.Drawing.Size(132, 22)
+        Me.dtpFechaInicio.TabIndex = 33
         '
         'txtPrecioFinal
         '
@@ -205,13 +205,13 @@ Partial Class Promociones_y_combos
         Me.btnPasar.TabIndex = 25
         Me.btnPasar.UseVisualStyleBackColor = True
         '
-        'txtPrecioReg
+        'txtPrecioNormal
         '
-        Me.txtPrecioReg.Location = New System.Drawing.Point(102, 144)
-        Me.txtPrecioReg.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtPrecioReg.Name = "txtPrecioReg"
-        Me.txtPrecioReg.Size = New System.Drawing.Size(132, 22)
-        Me.txtPrecioReg.TabIndex = 24
+        Me.txtPrecioNormal.Location = New System.Drawing.Point(102, 144)
+        Me.txtPrecioNormal.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtPrecioNormal.Name = "txtPrecioNormal"
+        Me.txtPrecioNormal.Size = New System.Drawing.Size(132, 22)
+        Me.txtPrecioNormal.TabIndex = 24
         '
         'Label2
         '
@@ -224,14 +224,14 @@ Partial Class Promociones_y_combos
         Me.Label2.TabIndex = 23
         Me.Label2.Text = "Precio Regular:"
         '
-        'cmbProducto
+        'cmProducto
         '
-        Me.cmbProducto.FormattingEnabled = True
-        Me.cmbProducto.Location = New System.Drawing.Point(102, 59)
-        Me.cmbProducto.Margin = New System.Windows.Forms.Padding(4)
-        Me.cmbProducto.Name = "cmbProducto"
-        Me.cmbProducto.Size = New System.Drawing.Size(513, 24)
-        Me.cmbProducto.TabIndex = 22
+        Me.cmProducto.FormattingEnabled = True
+        Me.cmProducto.Location = New System.Drawing.Point(102, 59)
+        Me.cmProducto.Margin = New System.Windows.Forms.Padding(4)
+        Me.cmProducto.Name = "cmProducto"
+        Me.cmProducto.Size = New System.Drawing.Size(513, 24)
+        Me.cmProducto.TabIndex = 22
         '
         'Label1
         '
@@ -254,9 +254,9 @@ Partial Class Promociones_y_combos
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.btnBorrar)
         Me.Controls.Add(Me.btnAgregar)
-        Me.Controls.Add(Me.dtpFin)
+        Me.Controls.Add(Me.dtpFechaFin)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.dtpInicio)
+        Me.Controls.Add(Me.dtpFechaInicio)
         Me.Controls.Add(Me.txtPrecioFinal)
         Me.Controls.Add(Me.cmbTipo)
         Me.Controls.Add(Me.txtNombre)
@@ -265,9 +265,9 @@ Partial Class Promociones_y_combos
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.btnPasar)
-        Me.Controls.Add(Me.txtPrecioReg)
+        Me.Controls.Add(Me.txtPrecioNormal)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.cmbProducto)
+        Me.Controls.Add(Me.cmProducto)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Promociones_y_combos"
         Me.Text = "Promociones_y_combos"
@@ -282,9 +282,9 @@ Partial Class Promociones_y_combos
     Friend WithEvents btnSalir As Button
     Friend WithEvents btnBorrar As Button
     Friend WithEvents btnAgregar As Button
-    Friend WithEvents dtpFin As DateTimePicker
+    Friend WithEvents dtpFechaFin As DateTimePicker
     Friend WithEvents Label7 As Label
-    Friend WithEvents dtpInicio As DateTimePicker
+    Friend WithEvents dtpFechaInicio As DateTimePicker
     Friend WithEvents txtPrecioFinal As TextBox
     Friend WithEvents cmbTipo As ComboBox
     Friend WithEvents txtNombre As TextBox
@@ -293,8 +293,8 @@ Partial Class Promociones_y_combos
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents btnPasar As Button
-    Friend WithEvents txtPrecioReg As TextBox
+    Friend WithEvents txtPrecioNormal As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents cmbProducto As ComboBox
+    Friend WithEvents cmProducto As ComboBox
     Friend WithEvents Label1 As Label
 End Class

@@ -24,25 +24,22 @@ Partial Class Catalogo_de_articulos
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Catalogo_de_articulos))
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton9 = New System.Windows.Forms.ToolStripButton()
+        Me.TsbNuevo = New System.Windows.Forms.ToolStripButton()
+        Me.TsbGrabar = New System.Windows.Forms.ToolStripButton()
+        Me.TsbBorrar = New System.Windows.Forms.ToolStripButton()
+        Me.TsbEditar = New System.Windows.Forms.ToolStripButton()
+        Me.TsbCancelar = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripButton5 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton6 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton7 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton8 = New System.Windows.Forms.ToolStripButton()
+        Me.TsbPrimero = New System.Windows.Forms.ToolStripButton()
+        Me.TsbAnterior = New System.Windows.Forms.ToolStripButton()
+        Me.TsbSiguiente = New System.Windows.Forms.ToolStripButton()
+        Me.TsbUltimo = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripTextBox1 = New System.Windows.Forms.ToolStripTextBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.dudMaximo = New System.Windows.Forms.DomainUpDown()
-        Me.dudMinimo = New System.Windows.Forms.DomainUpDown()
-        Me.cmbVigencia = New System.Windows.Forms.ComboBox()
-        Me.cmbUnidad = New System.Windows.Forms.ComboBox()
+        Me.cmbStatus = New System.Windows.Forms.ComboBox()
+        Me.cmbUM = New System.Windows.Forms.ComboBox()
         Me.txtCantidadExistente = New System.Windows.Forms.TextBox()
         Me.txtPrecioVenta = New System.Windows.Forms.TextBox()
         Me.txtCosto = New System.Windows.Forms.TextBox()
@@ -57,120 +54,122 @@ Partial Class Catalogo_de_articulos
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.TsbSalir = New System.Windows.Forms.ToolStripButton()
+        Me.DgvArticulos = New System.Windows.Forms.DataGridView()
+        Me.NdMinimo = New System.Windows.Forms.NumericUpDown()
+        Me.NdMaximo = New System.Windows.Forms.NumericUpDown()
         Me.ToolStrip1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
+        Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
+        CType(Me.DgvArticulos, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NdMinimo, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NdMaximo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ToolStrip1
         '
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton2, Me.ToolStripButton1, Me.ToolStripButton3, Me.ToolStripButton4, Me.ToolStripButton9, Me.ToolStripSeparator1, Me.ToolStripButton5, Me.ToolStripButton6, Me.ToolStripButton7, Me.ToolStripButton8, Me.ToolStripSeparator2, Me.ToolStripTextBox1})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TsbNuevo, Me.TsbGrabar, Me.TsbBorrar, Me.TsbEditar, Me.TsbCancelar, Me.ToolStripSeparator1, Me.TsbPrimero, Me.TsbAnterior, Me.TsbSiguiente, Me.TsbUltimo, Me.ToolStripSeparator2, Me.TsbSalir})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(633, 27)
+        Me.ToolStrip1.Size = New System.Drawing.Size(691, 33)
         Me.ToolStrip1.TabIndex = 4
         Me.ToolStrip1.Text = "ToolStrip1"
         '
-        'ToolStripButton2
+        'TsbNuevo
         '
-        Me.ToolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton2.Image = CType(resources.GetObject("ToolStripButton2.Image"), System.Drawing.Image)
-        Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton2.Name = "ToolStripButton2"
-        Me.ToolStripButton2.Size = New System.Drawing.Size(24, 24)
-        Me.ToolStripButton2.Text = "ToolStripButton2"
+        Me.TsbNuevo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.TsbNuevo.Image = CType(resources.GetObject("TsbNuevo.Image"), System.Drawing.Image)
+        Me.TsbNuevo.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.TsbNuevo.Name = "TsbNuevo"
+        Me.TsbNuevo.Size = New System.Drawing.Size(24, 30)
+        Me.TsbNuevo.Text = "ToolStripButton2"
         '
-        'ToolStripButton1
+        'TsbGrabar
         '
-        Me.ToolStripButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
-        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton1.Name = "ToolStripButton1"
-        Me.ToolStripButton1.Size = New System.Drawing.Size(24, 24)
-        Me.ToolStripButton1.Text = "ToolStripButton1"
+        Me.TsbGrabar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TsbGrabar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.TsbGrabar.Image = CType(resources.GetObject("TsbGrabar.Image"), System.Drawing.Image)
+        Me.TsbGrabar.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.TsbGrabar.Name = "TsbGrabar"
+        Me.TsbGrabar.Size = New System.Drawing.Size(24, 30)
+        Me.TsbGrabar.Text = "ToolStripButton1"
         '
-        'ToolStripButton3
+        'TsbBorrar
         '
-        Me.ToolStripButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ToolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton3.Image = CType(resources.GetObject("ToolStripButton3.Image"), System.Drawing.Image)
-        Me.ToolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton3.Name = "ToolStripButton3"
-        Me.ToolStripButton3.Size = New System.Drawing.Size(24, 24)
-        Me.ToolStripButton3.Text = "ToolStripButton3"
+        Me.TsbBorrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TsbBorrar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.TsbBorrar.Image = CType(resources.GetObject("TsbBorrar.Image"), System.Drawing.Image)
+        Me.TsbBorrar.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.TsbBorrar.Name = "TsbBorrar"
+        Me.TsbBorrar.Size = New System.Drawing.Size(24, 30)
+        Me.TsbBorrar.Text = "ToolStripButton3"
         '
-        'ToolStripButton4
+        'TsbEditar
         '
-        Me.ToolStripButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ToolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton4.Image = CType(resources.GetObject("ToolStripButton4.Image"), System.Drawing.Image)
-        Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton4.Name = "ToolStripButton4"
-        Me.ToolStripButton4.Size = New System.Drawing.Size(24, 24)
-        Me.ToolStripButton4.Text = "ToolStripButton4"
+        Me.TsbEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TsbEditar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.TsbEditar.Image = CType(resources.GetObject("TsbEditar.Image"), System.Drawing.Image)
+        Me.TsbEditar.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.TsbEditar.Name = "TsbEditar"
+        Me.TsbEditar.Size = New System.Drawing.Size(24, 30)
+        Me.TsbEditar.Text = "ToolStripButton4"
         '
-        'ToolStripButton9
+        'TsbCancelar
         '
-        Me.ToolStripButton9.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton9.Image = CType(resources.GetObject("ToolStripButton9.Image"), System.Drawing.Image)
-        Me.ToolStripButton9.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton9.Name = "ToolStripButton9"
-        Me.ToolStripButton9.Size = New System.Drawing.Size(24, 24)
-        Me.ToolStripButton9.Text = "ToolStripButton9"
+        Me.TsbCancelar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.TsbCancelar.Image = CType(resources.GetObject("TsbCancelar.Image"), System.Drawing.Image)
+        Me.TsbCancelar.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.TsbCancelar.Name = "TsbCancelar"
+        Me.TsbCancelar.Size = New System.Drawing.Size(24, 30)
+        Me.TsbCancelar.Text = "ToolStripButton9"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 27)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 33)
         '
-        'ToolStripButton5
+        'TsbPrimero
         '
-        Me.ToolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton5.Image = CType(resources.GetObject("ToolStripButton5.Image"), System.Drawing.Image)
-        Me.ToolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton5.Name = "ToolStripButton5"
-        Me.ToolStripButton5.Size = New System.Drawing.Size(24, 24)
-        Me.ToolStripButton5.Text = "ToolStripButton5"
+        Me.TsbPrimero.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.TsbPrimero.Image = CType(resources.GetObject("TsbPrimero.Image"), System.Drawing.Image)
+        Me.TsbPrimero.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.TsbPrimero.Name = "TsbPrimero"
+        Me.TsbPrimero.Size = New System.Drawing.Size(24, 30)
+        Me.TsbPrimero.Text = "ToolStripButton5"
         '
-        'ToolStripButton6
+        'TsbAnterior
         '
-        Me.ToolStripButton6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton6.Image = CType(resources.GetObject("ToolStripButton6.Image"), System.Drawing.Image)
-        Me.ToolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton6.Name = "ToolStripButton6"
-        Me.ToolStripButton6.Size = New System.Drawing.Size(24, 24)
-        Me.ToolStripButton6.Text = "ToolStripButton6"
+        Me.TsbAnterior.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.TsbAnterior.Image = CType(resources.GetObject("TsbAnterior.Image"), System.Drawing.Image)
+        Me.TsbAnterior.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.TsbAnterior.Name = "TsbAnterior"
+        Me.TsbAnterior.Size = New System.Drawing.Size(24, 30)
+        Me.TsbAnterior.Text = "ToolStripButton6"
         '
-        'ToolStripButton7
+        'TsbSiguiente
         '
-        Me.ToolStripButton7.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton7.Image = CType(resources.GetObject("ToolStripButton7.Image"), System.Drawing.Image)
-        Me.ToolStripButton7.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton7.Name = "ToolStripButton7"
-        Me.ToolStripButton7.Size = New System.Drawing.Size(24, 24)
-        Me.ToolStripButton7.Text = "ToolStripButton7"
+        Me.TsbSiguiente.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.TsbSiguiente.Image = CType(resources.GetObject("TsbSiguiente.Image"), System.Drawing.Image)
+        Me.TsbSiguiente.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.TsbSiguiente.Name = "TsbSiguiente"
+        Me.TsbSiguiente.Size = New System.Drawing.Size(24, 30)
+        Me.TsbSiguiente.Text = "ToolStripButton7"
         '
-        'ToolStripButton8
+        'TsbUltimo
         '
-        Me.ToolStripButton8.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton8.Image = CType(resources.GetObject("ToolStripButton8.Image"), System.Drawing.Image)
-        Me.ToolStripButton8.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton8.Name = "ToolStripButton8"
-        Me.ToolStripButton8.Size = New System.Drawing.Size(24, 24)
-        Me.ToolStripButton8.Text = "ToolStripButton8"
+        Me.TsbUltimo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.TsbUltimo.Image = CType(resources.GetObject("TsbUltimo.Image"), System.Drawing.Image)
+        Me.TsbUltimo.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.TsbUltimo.Name = "TsbUltimo"
+        Me.TsbUltimo.Size = New System.Drawing.Size(24, 30)
+        Me.TsbUltimo.Text = "ToolStripButton8"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 27)
-        '
-        'ToolStripTextBox1
-        '
-        Me.ToolStripTextBox1.Name = "ToolStripTextBox1"
-        Me.ToolStripTextBox1.Size = New System.Drawing.Size(100, 27)
-        Me.ToolStripTextBox1.Text = "SALIR"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 33)
         '
         'TabControl1
         '
@@ -180,25 +179,26 @@ Partial Class Catalogo_de_articulos
         Me.TabControl1.Location = New System.Drawing.Point(14, 78)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(517, 364)
+        Me.TabControl1.Size = New System.Drawing.Size(665, 409)
         Me.TabControl1.TabIndex = 3
         '
         'TabPage1
         '
+        Me.TabPage1.Controls.Add(Me.DgvArticulos)
         Me.TabPage1.Location = New System.Drawing.Point(4, 26)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(509, 334)
+        Me.TabPage1.Size = New System.Drawing.Size(657, 379)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Lista"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
         'TabPage2
         '
-        Me.TabPage2.Controls.Add(Me.dudMaximo)
-        Me.TabPage2.Controls.Add(Me.dudMinimo)
-        Me.TabPage2.Controls.Add(Me.cmbVigencia)
-        Me.TabPage2.Controls.Add(Me.cmbUnidad)
+        Me.TabPage2.Controls.Add(Me.NdMaximo)
+        Me.TabPage2.Controls.Add(Me.NdMinimo)
+        Me.TabPage2.Controls.Add(Me.cmbStatus)
+        Me.TabPage2.Controls.Add(Me.cmbUM)
         Me.TabPage2.Controls.Add(Me.txtCantidadExistente)
         Me.TabPage2.Controls.Add(Me.txtPrecioVenta)
         Me.TabPage2.Controls.Add(Me.txtCosto)
@@ -216,40 +216,26 @@ Partial Class Catalogo_de_articulos
         Me.TabPage2.Location = New System.Drawing.Point(4, 26)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(509, 334)
+        Me.TabPage2.Size = New System.Drawing.Size(657, 379)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Detalles"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
-        'dudMaximo
+        'cmbStatus
         '
-        Me.dudMaximo.Location = New System.Drawing.Point(163, 156)
-        Me.dudMaximo.Name = "dudMaximo"
-        Me.dudMaximo.Size = New System.Drawing.Size(140, 23)
-        Me.dudMaximo.TabIndex = 17
+        Me.cmbStatus.FormattingEnabled = True
+        Me.cmbStatus.Location = New System.Drawing.Point(163, 219)
+        Me.cmbStatus.Name = "cmbStatus"
+        Me.cmbStatus.Size = New System.Drawing.Size(140, 25)
+        Me.cmbStatus.TabIndex = 15
         '
-        'dudMinimo
+        'cmbUM
         '
-        Me.dudMinimo.Location = New System.Drawing.Point(163, 115)
-        Me.dudMinimo.Name = "dudMinimo"
-        Me.dudMinimo.Size = New System.Drawing.Size(140, 23)
-        Me.dudMinimo.TabIndex = 16
-        '
-        'cmbVigencia
-        '
-        Me.cmbVigencia.FormattingEnabled = True
-        Me.cmbVigencia.Location = New System.Drawing.Point(163, 219)
-        Me.cmbVigencia.Name = "cmbVigencia"
-        Me.cmbVigencia.Size = New System.Drawing.Size(140, 25)
-        Me.cmbVigencia.TabIndex = 15
-        '
-        'cmbUnidad
-        '
-        Me.cmbUnidad.FormattingEnabled = True
-        Me.cmbUnidad.Location = New System.Drawing.Point(163, 81)
-        Me.cmbUnidad.Name = "cmbUnidad"
-        Me.cmbUnidad.Size = New System.Drawing.Size(140, 25)
-        Me.cmbUnidad.TabIndex = 14
+        Me.cmbUM.FormattingEnabled = True
+        Me.cmbUM.Location = New System.Drawing.Point(163, 81)
+        Me.cmbUM.Name = "cmbUM"
+        Me.cmbUM.Size = New System.Drawing.Size(140, 25)
+        Me.cmbUM.TabIndex = 14
         '
         'txtCantidadExistente
         '
@@ -376,12 +362,48 @@ Partial Class Catalogo_de_articulos
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "ID Articulo:"
         '
+        'TsbSalir
+        '
+        Me.TsbSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TsbSalir.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.TsbSalir.Image = CType(resources.GetObject("TsbSalir.Image"), System.Drawing.Image)
+        Me.TsbSalir.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.TsbSalir.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.TsbSalir.Name = "TsbSalir"
+        Me.TsbSalir.Size = New System.Drawing.Size(133, 30)
+        Me.TsbSalir.Text = "tsbSalir"
+        '
+        'DgvArticulos
+        '
+        Me.DgvArticulos.BackgroundColor = System.Drawing.Color.White
+        Me.DgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DgvArticulos.GridColor = System.Drawing.SystemColors.ButtonShadow
+        Me.DgvArticulos.Location = New System.Drawing.Point(18, 20)
+        Me.DgvArticulos.Name = "DgvArticulos"
+        Me.DgvArticulos.RowTemplate.Height = 24
+        Me.DgvArticulos.Size = New System.Drawing.Size(622, 343)
+        Me.DgvArticulos.TabIndex = 0
+        '
+        'NdMinimo
+        '
+        Me.NdMinimo.Location = New System.Drawing.Point(163, 121)
+        Me.NdMinimo.Name = "NdMinimo"
+        Me.NdMinimo.Size = New System.Drawing.Size(120, 23)
+        Me.NdMinimo.TabIndex = 18
+        '
+        'NdMaximo
+        '
+        Me.NdMaximo.Location = New System.Drawing.Point(163, 150)
+        Me.NdMaximo.Name = "NdMaximo"
+        Me.NdMaximo.Size = New System.Drawing.Size(120, 23)
+        Me.NdMaximo.TabIndex = 19
+        '
         'Catalogo_de_articulos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(633, 474)
+        Me.ClientSize = New System.Drawing.Size(691, 522)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.TabControl1)
         Me.Name = "Catalogo_de_articulos"
@@ -389,33 +411,34 @@ Partial Class Catalogo_de_articulos
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
         Me.TabControl1.ResumeLayout(False)
+        Me.TabPage1.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
+        CType(Me.DgvArticulos, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NdMinimo, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NdMaximo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents ToolStrip1 As ToolStrip
-    Friend WithEvents ToolStripButton2 As ToolStripButton
-    Friend WithEvents ToolStripButton1 As ToolStripButton
-    Friend WithEvents ToolStripButton3 As ToolStripButton
-    Friend WithEvents ToolStripButton4 As ToolStripButton
-    Friend WithEvents ToolStripButton9 As ToolStripButton
+    Friend WithEvents TsbNuevo As ToolStripButton
+    Friend WithEvents TsbGrabar As ToolStripButton
+    Friend WithEvents TsbBorrar As ToolStripButton
+    Friend WithEvents TsbEditar As ToolStripButton
+    Friend WithEvents TsbCancelar As ToolStripButton
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
-    Friend WithEvents ToolStripButton5 As ToolStripButton
-    Friend WithEvents ToolStripButton6 As ToolStripButton
-    Friend WithEvents ToolStripButton7 As ToolStripButton
-    Friend WithEvents ToolStripButton8 As ToolStripButton
+    Friend WithEvents TsbPrimero As ToolStripButton
+    Friend WithEvents TsbAnterior As ToolStripButton
+    Friend WithEvents TsbSiguiente As ToolStripButton
+    Friend WithEvents TsbUltimo As ToolStripButton
     Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
-    Friend WithEvents ToolStripTextBox1 As ToolStripTextBox
     Friend WithEvents TabControl1 As TabControl
     Friend WithEvents TabPage1 As TabPage
     Friend WithEvents TabPage2 As TabPage
-    Friend WithEvents dudMaximo As DomainUpDown
-    Friend WithEvents dudMinimo As DomainUpDown
-    Friend WithEvents cmbVigencia As ComboBox
-    Friend WithEvents cmbUnidad As ComboBox
+    Friend WithEvents cmbStatus As ComboBox
+    Friend WithEvents cmbUM As ComboBox
     Friend WithEvents txtCantidadExistente As TextBox
     Friend WithEvents txtPrecioVenta As TextBox
     Friend WithEvents txtCosto As TextBox
@@ -430,4 +453,8 @@ Partial Class Catalogo_de_articulos
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents TsbSalir As ToolStripButton
+    Friend WithEvents DgvArticulos As DataGridView
+    Friend WithEvents NdMaximo As NumericUpDown
+    Friend WithEvents NdMinimo As NumericUpDown
 End Class
